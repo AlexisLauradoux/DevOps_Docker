@@ -8,6 +8,8 @@ services:
       dockerfile: docker/fluentd/Dockerfile
     volumes:
       - './:/app'
+    expose:
+      -"24224"
 
   elasicsearch:
     image: elasticsearch:6.5.0
@@ -16,5 +18,7 @@ services:
 
   kibana:
     image: kibana:6.5.0
+    ports:
+      - "5601:5601"
     volumes:
       - './:/app'
