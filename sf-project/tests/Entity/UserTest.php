@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
-    public function NameTest()
+    public function testName()
     {
       $user = new User();
 
@@ -16,7 +16,7 @@ class UserTest extends TestCase
       $this->assertEquals("TestName", $user->getName());
     }
 
-    public function PasswordTest()
+    public function testPassword()
     {
       $user = new User();
 
@@ -25,7 +25,7 @@ class UserTest extends TestCase
       $this->assertEquals("TestPassword", $user->getPassword());
     }
 
-    public function PseudoTest()
+    public function testPseudo()
     {
       $user = new User();
 

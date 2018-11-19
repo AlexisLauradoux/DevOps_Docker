@@ -36,6 +36,6 @@ class User
   function setPseudo($pseudo)
   {
     $Pseudo = $pseudo;
-  } 
+  }
 
 }
