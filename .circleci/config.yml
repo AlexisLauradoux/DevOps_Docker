@@ -9,22 +9,20 @@ jobs:
 
     steps:
       - checkout
-      - run: cd sf-project
-      - run : pwd
-      - run: ls -lah
+      
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-{{ checksum "sf-project/composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: composer install -n --prefer-dist
+      - run: cd sf-project && composer install -n --prefer-dist
 
       - save_cache:
           paths:
             - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
+          key: v1-dependencies-{{ checksum "sf-project/composer.json" }}
 
       # run tests!
       - run: phpunit
