@@ -9,7 +9,7 @@ services:
     volumes:
       - './:/app'
     expose:
-      -"24224"
+      - 24224
 
   elasicsearch:
     image: elasticsearch:6.5.0
