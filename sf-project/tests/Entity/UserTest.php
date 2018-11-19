@@ -2,7 +2,7 @@
 
 namespace App\Tests\Entity;
 
-use sf-project\src\Entity\User;
+use App\Entity\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
