@@ -10,32 +10,32 @@ class User
 
   public function getName()
   {
-     return $Name;
+     return $this->Name;
   }
 
   public function getPassword()
   {
-     return $Password;
+     return $this->Password;
   }
 
   public function getPseudo()
   {
-     return $Pseudo;
+     return $this->Pseudo;
   }
 
   public function setName($name)
   {
-    $Name = $name;
+    $this->Name = $name;
   }
 
   public function setPassword($password)
   {
-     $Password = $password;
+     $this->Password = $password;
    }
 
   function setPseudo($pseudo)
   {
-    $Pseudo = $pseudo;
+    $this->Pseudo = $pseudo;
   }
 
 }
