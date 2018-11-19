@@ -25,4 +25,5 @@ jobs:
           key: v1-dependencies-{{ checksum "sf-project/composer.json" }}
 
       # run tests!
+      - run: chmod +x sf-project/bin/phpunit
       - run: sf-project/bin/phpunit
