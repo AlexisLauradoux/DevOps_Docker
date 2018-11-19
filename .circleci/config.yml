@@ -1,21 +1,17 @@
-# PHP CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-php/ for more details
-#
 version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/php:7.2.11-fpm
 
 
     working_directory: ~/repo
 
     steps:
-      - run: cd sf-project
       - checkout
-
+      - run: cd sf-project
+      - run : pwd
+      - run: ls -lah
       # Download and cache dependencies
       - restore_cache:
           keys:
