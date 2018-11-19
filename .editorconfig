@@ -7,8 +7,11 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[Vagrantfile]
+[composer.json]
 indent_size = 2
 
-[provisioning/*]
+[docker/*]
 indent_size = 2
+
+[Makefile]
+indent_style = tab
