@@ -26,4 +26,4 @@ jobs:
 
       # run tests!
       - run: chmod +x sf-project/bin/phpunit
-      - run: sf-project/bin/phpunit sf-project/tests
+      - run: cd sf-project && bin/phpunit
