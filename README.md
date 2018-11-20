@@ -26,8 +26,8 @@ Then :
 
 # Web page
 
-- To see the web page of Symfony : [localhost:8081](localhost:8081)
-- To see the web page of Kibana : [localhost:5601](localhost:5601)
+- To see the web page of Symfony : [localhost:8081](http://localhost:8081/)
+- To see the web page of Kibana : [localhost:5601](http://localhost:5601)
 
 # CircleCI
 
