@@ -18,10 +18,11 @@ Then :
 
 # Symfony application with CI and EFK (Elasticsearch + Fluentd + Kibana)
 
+To run :
 - To run the stack sf-prject (Symfony-PHP-MySql-NGINX) : `cd /vagrant/sf-project && make start`
 - To run the stack docker-monitoring (Elasticsearch-Fluentd-Kibana) : `cd /vagrant/docker-monitoring && make start`
 
-
+To stop :
 - To stop the stack sf-prject (Symfony-PHP-MySql-NGINX) : `cd /vagrant/sf-project && make stop`
 - To stop the stack docker-monitoring (Elasticsearch-Fluentd-Kibana) : `cd /vagrant/docker-monitoring && make stop`
 
