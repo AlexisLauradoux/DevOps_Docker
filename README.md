@@ -28,3 +28,8 @@ Then :
 
 - To see the web page of Symfony : `http://localhost:8081/`
 - To see the web page of Kibana : `http://localhost:5601/`
+
+# CircleCI
+
+This repo is configure to test with PHPUNIT on Circle CI
+- go on `https://circleci.com/` to configure your repo on Circle CI with your GitHub account
