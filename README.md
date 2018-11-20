@@ -24,5 +24,7 @@ Then :
 - To stop the stack sf-prject (Symfony-PHP-MySql-NGINX) : `cd /vagrant/sf-project && make stop`
 - To stop the stack docker-monitoring (Elasticsearch-Fluentd-Kibana) : `cd /vagrant/docker-monitoring && make stop`
 
+# Web page
+
 - To see the web page of Symfony : `http://localhost:8081/`
 - To see the web page of Kibana : `http://localhost:5601/`
